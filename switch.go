@@ -20,7 +20,6 @@ func osSwitch(os string){
 }
 
 func daySwitch(day time.Weekday) {
-	fmt.Println(day)
 	switch time.Saturday {
 	case day + 0:
 		fmt.Println("Today is Saturday")
@@ -34,6 +33,19 @@ func daySwitch(day time.Weekday) {
 
 }
 
+func noConditionSwitch(){
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Morning")
+	case t.Hour() < 17:
+		fmt.Println("Afternooon")
+	default:
+		fmt.Println("Evening")
+	}
+
+}
+
 func main(){
 	// determine osx
 	os:=runtime.GOOS
@@ -42,5 +54,8 @@ func main(){
 	// determine day
 	day:=time.Now().Weekday()
 	daySwitch(day)
+
+	// no condition switch
+	noConditionSwitch()
 
 }
