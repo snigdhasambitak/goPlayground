@@ -12,7 +12,7 @@ func main() {
 
 	str1 := "little"
 
-	var x, _ = 1.0, 2.0
+	var x, _ int = 1.0, 2.0
 
 	fmt.Println(" a is", a)
 	fmt.Println(" b is", b)

@@ -2,18 +2,24 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	sum := 0
-	for i:=0; i < 10; i++ {
-		if i% 2 == 0{
-			fmt.Printf("%v is a Even number \n", i)
-		}
+	for i := 0; i < 10; i++ {
 		sum += i
 	}
 	fmt.Println(sum)
 
-	for sum < 91 {
-		sum += sum
+	b := [4]int{1, 2, 3, 4}
+
+	var c []int
+
+	c = append(c, b[0:4]...)
+
+	sumofarray(c)
+}
+
+func sumofarray(a ...[]int) {
+	for i, j := range a {
+		fmt.Println(i, j)
 	}
-	fmt.Println(sum)
 }
