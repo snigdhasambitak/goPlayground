@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/append.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loop.go" beforeDir="false" afterPath="$PROJECT_DIR$/loop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/slices.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.go" beforeDir="false" afterPath="$PROJECT_DIR$/variables.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
-  <component name="RunManager" selected="Go Build.go build slices.go">
+  <component name="RunManager" selected="Go Build.go build make.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -65,6 +63,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build append.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/append.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build arrays.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -91,6 +97,14 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build make.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/make.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build slices.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -99,29 +113,13 @@
       <filePath value="$PROJECT_DIR$/slices.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build type.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/type.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build variables.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/variables.go" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build make.go" />
+        <item itemvalue="Go Build.go build append.go" />
         <item itemvalue="Go Build.go build slices.go" />
         <item itemvalue="Go Build.go build arrays.go" />
         <item itemvalue="Go Build.go build loop.go" />
-        <item itemvalue="Go Build.go build variables.go" />
-        <item itemvalue="Go Build.go build type.go" />
       </list>
     </recent_temporary>
   </component>
