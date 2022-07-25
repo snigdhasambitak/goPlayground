@@ -1,12 +1,12 @@
 package main
 
-import(
+import (
 	"fmt"
 	"runtime"
 	"time"
 )
 
-func osSwitch(os string){
+func osSwitch(os string) {
 
 	fmt.Print("Go runs on ")
 	switch os {
@@ -33,7 +33,7 @@ func daySwitch(day time.Weekday) {
 
 }
 
-func noConditionSwitch(){
+func noConditionSwitch() {
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:
@@ -46,16 +46,37 @@ func noConditionSwitch(){
 
 }
 
-func main(){
+func age() {
+
+	ages := map[string]int{}
+	ages["kevin"] = 7
+
+	switch ages["kevin"] {
+
+	case 1, 3, 5, 7, 11:
+		fmt.Println("kevin age is prime")
+	case 2, 4, 6, 8:
+		fmt.Println("kevin age is even")
+	default:
+		fmt.Println("kevuin age does not matter")
+
+	}
+
+}
+
+func main() {
 	// determine osx
-	os:=runtime.GOOS
+	os := runtime.GOOS
 	osSwitch(os)
 
 	// determine day
-	day:=time.Now().Weekday()
+	day := time.Now().Weekday()
 	daySwitch(day)
 
 	// no condition switch
 	noConditionSwitch()
+
+	// switch condition
+	age()
 
 }
