@@ -3,23 +3,53 @@ package main
 import "fmt"
 
 func main() {
-	sum := 0
-	for i := 0; i < 10; i++ {
-		sum += i
+
+	n := 10
+	fmt.Println(sumofn(n))
+
+	m := map[string]int{
+		"a": 1,
+		"b": 2,
+		"c": 3,
 	}
-	fmt.Println(sum)
 
-	b := [4]int{1, 2, 3, 4}
+	fmt.Println(mapsum(m))
 
-	var c []int
+	stopiteration(10)
 
-	c = append(c, b[0:4]...)
-
-	sumofarray(c)
 }
 
-func sumofarray(a ...[]int) {
-	for i, j := range a {
-		fmt.Println(i, j)
+func sumofn(n int) int {
+	sum := 0
+
+	// loop to iterate over n numbers
+	for i := 0; i < n; i++ {
+		sum += i
+	}
+	return sum
+}
+
+func mapsum(m map[string]int) int {
+	sum := 0
+
+	// loop to iterate over the values of a map
+	for _, value := range m {
+		sum += value
+	}
+	return sum
+}
+
+// utilise continue and break
+func stopiteration(n int) {
+	a := 0
+	for a < n {
+		if a%2 == 0 {
+			a++
+			continue
+		} else if a == 5 {
+			break
+		}
+		fmt.Println(a)
+		a++
 	}
 }
