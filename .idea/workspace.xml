@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/functionPointers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/methodPointers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/palindromeString.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pointerIndirection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pointerIndirection2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pointerreceiver.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methodPointers.go" beforeDir="false" afterPath="$PROJECT_DIR$/methodPointers.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,9 @@
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;Go Build.go build hello.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build methodPointers.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build pointerIndirection.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build pointerIndirection2.go.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
@@ -73,6 +77,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Build.go build hello.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
@@ -91,28 +100,12 @@
       <filePath value="$PROJECT_DIR$/add.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build exported.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/exported.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/hello.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build if.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/if.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -123,21 +116,37 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build structs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build methodPointers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/structs.go" />
+      <filePath value="$PROJECT_DIR$/methodPointers.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build pointerIndirection2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/pointerIndirection2.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build pointerIndirection.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/pointerIndirection.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build hello.go" />
+        <item itemvalue="Go Build.go build pointerIndirection.go" />
+        <item itemvalue="Go Build.go build methodPointers.go" />
+        <item itemvalue="Go Build.go build pointerIndirection2.go" />
         <item itemvalue="Go Build.go build add.go" />
-        <item itemvalue="Go Build.go build exported.go" />
-        <item itemvalue="Go Build.go build if.go" />
-        <item itemvalue="Go Build.go build structs.go" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +174,10 @@
       <workItem from="1717393546827" duration="5158000" />
       <workItem from="1717623886373" duration="3991000" />
       <workItem from="1718176015671" duration="149000" />
-      <workItem from="1718306884245" duration="2017000" />
+      <workItem from="1718306884245" duration="5110000" />
+      <workItem from="1718345943510" duration="23000" />
+      <workItem from="1718345979964" duration="338000" />
+      <workItem from="1718600761808" duration="4835000" />
     </task>
     <servers />
   </component>
