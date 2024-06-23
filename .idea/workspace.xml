@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/interface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8sResourceinterface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shapeInterface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emptyInterface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nilInterface.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implicitInterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/implicitInterface.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +48,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build emptyInterface.go.executor": "Run",
     "Go Build.go build hello.go.executor": "Run",
+    "Go Build.go build implicitInterface.go.executor": "Run",
     "Go Build.go build interface.go.executor": "Run",
     "Go Build.go build k8sResourceinterface.go.executor": "Run",
     "Go Build.go build methodPointers.go.executor": "Run",
+    "Go Build.go build nilInterface.go.executor": "Run",
     "Go Build.go build pointerIndirection.go.executor": "Run",
     "Go Build.go build pointerIndirection2.go.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -82,7 +85,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build interface.go">
+  <component name="RunManager" selected="Go Build.go build emptyInterface.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -92,12 +95,20 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build emptyInterface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello.go" />
+      <filePath value="$PROJECT_DIR$/emptyInterface.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build implicitInterface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/implicitInterface.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build interface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -124,29 +135,21 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build methodPointers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build nilInterface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/methodPointers.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build pointerIndirection.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/pointerIndirection.go" />
+      <filePath value="$PROJECT_DIR$/nilInterface.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build emptyInterface.go" />
+        <item itemvalue="Go Build.go build nilInterface.go" />
+        <item itemvalue="Go Build.go build implicitInterface.go" />
         <item itemvalue="Go Build.go build interface.go" />
         <item itemvalue="Go Build.go build k8sResourceinterface.go" />
-        <item itemvalue="Go Build.go build hello.go" />
-        <item itemvalue="Go Build.go build pointerIndirection.go" />
-        <item itemvalue="Go Build.go build methodPointers.go" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +180,7 @@
       <workItem from="1718306884245" duration="5110000" />
       <workItem from="1718345943510" duration="23000" />
       <workItem from="1718345979964" duration="338000" />
-      <workItem from="1718600761808" duration="8529000" />
+      <workItem from="1718600761808" duration="17235000" />
     </task>
     <servers />
   </component>

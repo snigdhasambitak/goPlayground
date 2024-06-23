@@ -1,21 +1,41 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
-type I interface {
-	M()
+type Inter interface {
+	methodInter()
 }
 
-type T struct {
-	S string
+type f float64
+
+type Str struct {
+	name string
 }
 
-func (t *T) M() {
-	fmt.Println(t.S)
+// This method means type T implements the interface I,
+func (s *Str) methodInter() {
+	fmt.Println(s)
+}
+
+func (f f) methodInter() {
+	fmt.Println(f)
 }
 
 func main() {
+	var I Inter
+	I = &Str{"hello"}
+	describe(I)
+	I.methodInter()
 
-	var i I = &T{"hello"}
-	i.M()
+	I = f(math.Pi)
+	describe(I)
+	I.methodInter()
+
+}
+
+func describe(i Inter) {
+	fmt.Printf("(%v, %T)\n)", i, i)
 }
