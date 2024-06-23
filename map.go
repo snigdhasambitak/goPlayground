@@ -13,6 +13,10 @@ func main() {
 
 	fmt.Println(mapexample) // map[adam:18/05/1991 keith:20/01/1991 kevin:19/07/1997]
 
+	for k, v := range mapexample {
+		fmt.Printf("%s DOB is %s\n", k, v)
+	}
+
 	//define a map and assign key values later
 	ages := map[string]int{}
 	ages["keith"] = 28

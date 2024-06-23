@@ -58,7 +58,7 @@ func age() {
 	case 2, 4, 6, 8:
 		fmt.Println("kevin age is even")
 	default:
-		fmt.Println("kevuin age does not matter")
+		fmt.Println("kevin age does not matter")
 
 	}
 
