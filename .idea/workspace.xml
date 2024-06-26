@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/getIpaddressStringer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stringers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/typeAsseetionsinterface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/typeSwitchesinterface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errorExample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileReader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/switch.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,52 +47,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build emptyInterface.go.executor": "Run",
-    "Go Build.go build getIpaddressStringer.go.executor": "Run",
-    "Go Build.go build hello.go.executor": "Run",
-    "Go Build.go build implicitInterface.go.executor": "Run",
-    "Go Build.go build interface.go.executor": "Run",
-    "Go Build.go build k8sResourceinterface.go.executor": "Run",
-    "Go Build.go build map.go.executor": "Run",
-    "Go Build.go build methodPointers.go.executor": "Run",
-    "Go Build.go build nilInterface.go.executor": "Run",
-    "Go Build.go build pointerIndirection.go.executor": "Run",
-    "Go Build.go build pointerIndirection2.go.executor": "Run",
-    "Go Build.go build stringers.go.executor": "Run",
-    "Go Build.go build typeAsseetionsinterface.go.executor": "Run",
-    "Go Build.go build typeSwitchesinterface.go.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "go.import.settings.migrated": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/saryakumar/stash/goPlayground",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build emptyInterface.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build error.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build errorExample.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build fileReader.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build getIpaddressStringer.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build hello.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build implicitInterface.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build interface.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build k8sResourceinterface.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build map.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build methodPointers.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build nilInterface.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build pointerIndirection.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build pointerIndirection2.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build reader.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build stringers.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build typeAsseetionsinterface.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build typeSwitchesinterface.go.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/saryakumar/stash/goPlayground&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build getIpaddressStringer.go">
+  <component name="RunManager" selected="Go Build.go build reader.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -103,12 +106,36 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build getIpaddressStringer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build errorExample.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/getIpaddressStringer.go" />
+      <filePath value="$PROJECT_DIR$/errorExample.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build error.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/error.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build fileReader.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/fileReader.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -119,45 +146,21 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build map.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build reader.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/map.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build stringers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/stringers.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build typeAsseetionsinterface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/typeAsseetionsinterface.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build typeSwitchesinterface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/typeSwitchesinterface.go" />
+      <filePath value="$PROJECT_DIR$/reader.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build getIpaddressStringer.go" />
-        <item itemvalue="Go Build.go build stringers.go" />
-        <item itemvalue="Go Build.go build map.go" />
-        <item itemvalue="Go Build.go build typeSwitchesinterface.go" />
-        <item itemvalue="Go Build.go build typeAsseetionsinterface.go" />
+        <item itemvalue="Go Build.go build reader.go" />
+        <item itemvalue="Go Build.go build fileReader.go" />
+        <item itemvalue="Go Build.go build hello.go" />
+        <item itemvalue="Go Build.go build errorExample.go" />
+        <item itemvalue="Go Build.go build error.go" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +191,7 @@
       <workItem from="1718306884245" duration="5110000" />
       <workItem from="1718345943510" duration="23000" />
       <workItem from="1718345979964" duration="338000" />
-      <workItem from="1718600761808" duration="20908000" />
+      <workItem from="1718600761808" duration="31538000" />
     </task>
     <servers />
   </component>
