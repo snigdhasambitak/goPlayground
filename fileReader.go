@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"log"
+	"io"
 	"os"
 )
 
@@ -10,24 +10,14 @@ func main() {
 
 	file, err := os.Open("example.txt")
 	if err != nil {
-		log.Fatal(err)
+		fmt.Printf("Error opening file: %v", err)
 	}
 	defer file.Close()
-	fileInfo, err := file.Stat()
+
+	reader, err := io.ReadAll(file)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Printf("Error reading file: %v", err)
 	}
-	fileSize := fileInfo.Size()
-	fmt.Println(fileSize)
 
-	buffer := make([]byte, fileSize)
-	file.Read(buffer)
-	fmt.Println(string(buffer))
-	//buffer := make([]byte, fileSize)
-	//_, err = file.Read(buffer)
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
-	//fmt.Println(string(buffer))
-
+	fmt.Println(string(reader))
 }

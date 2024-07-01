@@ -1,0 +1,21 @@
+2023-06-03 10:15:42 INFO Starting the application
+2023-06-03 10:16:01 ERROR Connection failed from 192.168.1.1
+2023-06-03 10:17:23 DEBUG User login from 10.0.0.2
+2023-06-03 10:18:45 INFO File uploaded from 172.16.0.5
+2023-06-03 10:19:08 WARN Unexpected input from 192.168.1.100
+2023-06-03 10:20:30 INFO Processing request from 203.0.113.42
+2023-06-03 10:21:00 ERROR Timeout while connecting to 192.0.2.12
+2023-06-03 10:21:45 DEBUG User logout from 10.1.1.1
+2023-06-03 10:22:20 INFO System maintenance scheduled 10.1.1.1
+2023-06-03 10:23:10 INFO System maintenance completed
+2023-06-03 10:24:00 INFO Connection established with 172.16.0.5
+2023-06-03 10:25:15 INFO Session ended for 203.0.113.76
+2023-06-03 10:26:40 WARN Low disk space on 10.2.0.4
+2023-06-03 10:27:50 INFO Backup started
+2023-06-03 10:28:30 ERROR Backup failed for 192.168.1.1
+2023-06-03 10:25:15 INFO Session ended for 203.0.113.76
+2023-06-03 10:17:23 DEBUG User login from 10.0.0.2
+2023-06-03 10:17:23 DEBUG User login from 10.0.0.2
+2023-06-03 10:24:00 INFO Connection established with 172.16.0.5
+2023-06-03 10:24:00 INFO Connection established with 172.16.0.5
+2023-06-03 10:24:00 INFO Connection established with 172.16.0.5
