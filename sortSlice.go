@@ -7,16 +7,16 @@ import (
 
 func main() {
 
-	arr := []int{10, 7, 1, 48, 9, 22}
+	arr := []int{89, 1, 65, 2, 7, 0, 45, 54}
 
+	// sort in ascending order
+	sort.Ints(arr)
 	fmt.Println(arr)
 
+	//sort descending order
 	sort.Slice(arr, func(i, j int) bool {
 		return arr[i] > arr[j]
 	})
-
-	for _, v := range arr {
-		fmt.Println(v)
-	}
+	fmt.Println(arr)
 
 }
