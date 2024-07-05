@@ -6,7 +6,7 @@ type Numeric interface {
 	~int | ~float64
 }
 
-func add[T Numeric](a, b T) T {
+func add2[T Numeric](a, b T) T {
 	return a + b
 }
 
@@ -25,6 +25,9 @@ func main() {
 
 	// add using type constraint interface
 	a, b := 3.1, 4.3
-	fmt.Println(add(a, b))
+	fmt.Println(add2(a, b))
+
+	m, n := 3, 4
+	fmt.Println(add2(m, n))
 
 }

@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/typeConstraints.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortSlice.go" beforeDir="false" afterPath="$PROJECT_DIR$/sortSlice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeConstraints.go" beforeDir="false" afterPath="$PROJECT_DIR$/typeConstraints.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +195,7 @@
       <workItem from="1718600761808" duration="31538000" />
       <workItem from="1719377410835" duration="7899000" />
       <workItem from="1719807959356" duration="12199000" />
-      <workItem from="1720096585660" duration="1424000" />
+      <workItem from="1720096585660" duration="1502000" />
     </task>
     <servers />
   </component>
