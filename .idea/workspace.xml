@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/typeConstraints.go" beforeDir="false" afterPath="$PROJECT_DIR$/typeConstraints.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channels.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channels2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goroutine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallelprocessing.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syncGroup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,62 +48,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build emptyInterface.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build error.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build errorExample.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build fileReader.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build filelineReader.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build filterIpfromlogs.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build getIpaddressStringer.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build hello.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build implicitInterface.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build interface.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build k8sResourceinterface.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build map.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build methodPointers.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build nilInterface.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build palindromeString.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build pointerIndirection.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build pointerIndirection2.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build reader.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build sortSlice.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build stringers.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build test.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build typeAsseetionsinterface.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build typeConstraints.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build typeSwitchesinterface.go.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/saryakumar/stash/goPlayground&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build channels.go.executor": "Run",
+    "Go Build.go build channels2.go.executor": "Run",
+    "Go Build.go build emptyInterface.go.executor": "Run",
+    "Go Build.go build error.go.executor": "Run",
+    "Go Build.go build errorExample.go.executor": "Run",
+    "Go Build.go build fileReader.go.executor": "Run",
+    "Go Build.go build filelineReader.go.executor": "Run",
+    "Go Build.go build filterIpfromlogs.go.executor": "Run",
+    "Go Build.go build getIpaddressStringer.go.executor": "Run",
+    "Go Build.go build goroutine.go.executor": "Run",
+    "Go Build.go build hello.go.executor": "Run",
+    "Go Build.go build implicitInterface.go.executor": "Run",
+    "Go Build.go build interface.go.executor": "Run",
+    "Go Build.go build k8sResourceinterface.go.executor": "Run",
+    "Go Build.go build map.go.executor": "Run",
+    "Go Build.go build methodPointers.go.executor": "Run",
+    "Go Build.go build nilInterface.go.executor": "Run",
+    "Go Build.go build palindromeString.go.executor": "Run",
+    "Go Build.go build parallelprocessing.go.executor": "Run",
+    "Go Build.go build pointerIndirection.go.executor": "Run",
+    "Go Build.go build pointerIndirection2.go.executor": "Run",
+    "Go Build.go build reader.go.executor": "Run",
+    "Go Build.go build sortSlice.go.executor": "Run",
+    "Go Build.go build stringers.go.executor": "Run",
+    "Go Build.go build syncGroup.go.executor": "Run",
+    "Go Build.go build test.go.executor": "Run",
+    "Go Build.go build typeAsseetionsinterface.go.executor": "Run",
+    "Go Build.go build typeConstraints.go.executor": "Run",
+    "Go Build.go build typeSwitchesinterface.go.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/saryakumar/stash/goPlayground",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build typeConstraints.go">
+  <component name="RunManager" selected="Go Build.go build syncGroup.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -107,20 +118,20 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build filterIpfromlogs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build channels2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/filterIpfromlogs.go" />
+      <filePath value="$PROJECT_DIR$/channels2.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build channels.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello.go" />
+      <filePath value="$PROJECT_DIR$/channels.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -131,12 +142,20 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build sortSlice.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build parallelprocessing.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/sortSlice.go" />
+      <filePath value="$PROJECT_DIR$/parallelprocessing.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build syncGroup.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/syncGroup.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -147,21 +166,13 @@
       <filePath value="$PROJECT_DIR$/test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build typeConstraints.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/typeConstraints.go" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build typeConstraints.go" />
-        <item itemvalue="Go Build.go build sortSlice.go" />
+        <item itemvalue="Go Build.go build syncGroup.go" />
+        <item itemvalue="Go Build.go build parallelprocessing.go" />
+        <item itemvalue="Go Build.go build channels2.go" />
+        <item itemvalue="Go Build.go build channels.go" />
         <item itemvalue="Go Build.go build test.go" />
-        <item itemvalue="Go Build.go build filterIpfromlogs.go" />
-        <item itemvalue="Go Build.go build hello.go" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +206,9 @@
       <workItem from="1718600761808" duration="31538000" />
       <workItem from="1719377410835" duration="7899000" />
       <workItem from="1719807959356" duration="12199000" />
-      <workItem from="1720096585660" duration="1502000" />
+      <workItem from="1720096585660" duration="4988000" />
+      <workItem from="1720244825029" duration="83000" />
+      <workItem from="1720327793177" duration="12178000" />
     </task>
     <servers />
   </component>
