@@ -1,21 +1,58 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"regexp"
+	"sort"
+)
 
 func main() {
 
-	var arr1 = []int{1, 2, 3}
-
-	var arr2 = []int{1, 2, 3}
-
-	arr3 := make([]int, 0)
-
-	sum := 0
-
-	for i := 0; i < len(arr1); i++ {
-		sum = arr1[i] + arr2[i]
-		arr3 = append(arr3, sum)
+	file, err := os.Open("logfile.txt")
+	if err != nil {
+		log.Fatal(err)
 	}
-	fmt.Println(arr3)
+	defer file.Close()
 
+	r, err := regexp.Compile(`\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b`)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fileline := bufio.NewScanner(file)
+
+	logmap := make(map[string]int)
+
+	for fileline.Scan() {
+		text := fileline.Text()
+		matches := r.FindAllString(text, -1)
+
+		for _, m := range matches {
+			logmap[m]++
+		}
+
+	}
+	fmt.Println(logmap)
+
+	type arrstruct struct {
+		ipAddress string
+		count     int
+	}
+
+	var linearr []arrstruct
+
+	for ip, count := range logmap {
+		linearr = append(linearr, arrstruct{ip, count})
+	}
+
+	sort.Slice(linearr, func(i, j int) bool {
+		return linearr[i].count > linearr[j].count
+	})
+
+	for _, line := range linearr {
+		fmt.Println(line.ipAddress, line.count)
+	}
 }
