@@ -5,68 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrays/copyArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/matchingPairs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/matchingPairs2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/sameElementsinArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtimeExamples/k8sResourceinterface.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/add.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/append.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/append.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boolean.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/boolean.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channels.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/channels.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channels2.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/channels2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/defer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emptyInterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/emptyInterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/error.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorExample.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/errorExample.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exported.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/exported.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileReader.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/fileReader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filelineReader.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/filelineReader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filterIpfromlogs.go" beforeDir="false" afterPath="$PROJECT_DIR$/realtimeExamples/filterIpfromlogs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functionPointers.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/functionPointers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getIpaddressStringer.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/getIpaddressStringer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goroutine.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/goroutine.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpServer/httpServer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/if.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implicitInterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/implicitInterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8sResourceinterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/k8sResourceinterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/realtimeExamples/logfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loop.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/loop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/make.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/math.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methodPointers.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/methodPointers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nilInterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/nilInterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindromeString.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/palindromeString.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parallelprocessing.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/parallelprocessing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pointerIndirection.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/pointerIndirection.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pointerIndirection2.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/pointerIndirection2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pointerreceiver.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/pointerreceiver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pointers.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/pointers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rand.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/rand.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/reader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverseArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays/reverseArray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shapeInterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/shapeInterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/slices.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slicesExtended.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/slicesExtended.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slicetomap.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/slicetomap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortSlice.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/sortSlice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stringers.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/stringers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/structs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swap.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/swap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/switch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/syncGroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/syncGroup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/time.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/type.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeAsseetionsinterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/typeAsseetionsinterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeConstraints.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/typeConstraints.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeSwitchesinterface.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/typeSwitchesinterface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.go" beforeDir="false" afterPath="$PROJECT_DIR$/goBasics/variables.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrays/sameElementsinArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays/sameElementinArray.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +217,7 @@
       <workItem from="1720873849564" duration="7307000" />
       <workItem from="1721190553349" duration="221000" />
       <workItem from="1721278117845" duration="8430000" />
-      <workItem from="1721673828935" duration="726000" />
+      <workItem from="1721673828935" duration="871000" />
     </task>
     <servers />
   </component>
