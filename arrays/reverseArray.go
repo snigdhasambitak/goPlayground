@@ -18,5 +18,11 @@ func main() {
 	sort.Slice(arr1, func(i, j int) bool {
 		return arr1[i] > arr1[j]
 	})
+
+	fmt.Println(arr1)
+
+	sort.Slice(arr1, func(i, j int) bool {
+		return arr1[i] < arr1[j]
+	})
 	fmt.Println(arr1)
 }
