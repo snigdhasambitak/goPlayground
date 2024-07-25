@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrays/arrayOperations.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/reverseSingleString.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/reverseStrings.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/maximumSubarray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/mergeSortedArrays.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/moveZeroestoEnd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/twosum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays/reverseArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays/reverseArray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrays/test.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,10 @@
     "Go Build.go build interface.go.executor": "Run",
     "Go Build.go build k8sResourceinterface.go.executor": "Run",
     "Go Build.go build map.go.executor": "Run",
+    "Go Build.go build maximumSubarray.go.executor": "Run",
+    "Go Build.go build mergeSortedArrays.go.executor": "Run",
     "Go Build.go build methodPointers.go.executor": "Run",
+    "Go Build.go build moveZeroestoEnd.go.executor": "Run",
     "Go Build.go build nilInterface.go.executor": "Run",
     "Go Build.go build palindromeString.go.executor": "Run",
     "Go Build.go build parallelprocessing.go.executor": "Run",
@@ -123,7 +126,7 @@
       <recent name="$PROJECT_DIR$/realtimeExamples" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build test.go (1)">
+  <component name="RunManager" selected="Go Build.go build moveZeroestoEnd.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -141,28 +144,36 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build maximumSubarray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/arrays/maximumSubarray.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build mergeSortedArrays.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/arrays/mergeSortedArrays.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build moveZeroestoEnd.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/arrays/moveZeroestoEnd.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build reverseArray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/arrays/reverseArray.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build reverseSingleString.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/arrays/reverseSingleString.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build reverseStrings.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/arrays/reverseStrings.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build test.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -173,21 +184,13 @@
       <filePath value="$PROJECT_DIR$/arrays/test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/test.go" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build moveZeroestoEnd.go" />
+        <item itemvalue="Go Build.go build maximumSubarray.go" />
         <item itemvalue="Go Build.go build test.go (1)" />
+        <item itemvalue="Go Build.go build mergeSortedArrays.go" />
         <item itemvalue="Go Build.go build reverseArray.go" />
-        <item itemvalue="Go Build.go build reverseStrings.go" />
-        <item itemvalue="Go Build.go build reverseSingleString.go" />
-        <item itemvalue="Go Build.go build test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +230,7 @@
       <workItem from="1720873849564" duration="7307000" />
       <workItem from="1721190553349" duration="221000" />
       <workItem from="1721278117845" duration="8430000" />
-      <workItem from="1721673828935" duration="9653000" />
+      <workItem from="1721673828935" duration="21062000" />
     </task>
     <servers />
   </component>
