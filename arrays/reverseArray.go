@@ -2,27 +2,20 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
+func reverseArray(nums []int) []int {
+
+	for i, j := 0, len(nums)-1; i < j; i, j = i+1, j-1 {
+		nums[i], nums[j] = nums[j], nums[i]
+
+	}
+	return nums
+
+}
+
 func main() {
+	arr := []int{7, 1, 2, 3, 4, 5, 6}
+	fmt.Println(reverseArray(arr))
 
-	var arr1 = []int{10, 2, 3, 9, 1, 7, 32, 91, 42}
-
-	sort.Sort(sort.Reverse(sort.IntSlice(arr1)))
-	fmt.Println(arr1)
-
-	sort.Ints(arr1)
-	fmt.Println(arr1)
-
-	sort.Slice(arr1, func(i, j int) bool {
-		return arr1[i] > arr1[j]
-	})
-
-	fmt.Println(arr1)
-
-	sort.Slice(arr1, func(i, j int) bool {
-		return arr1[i] < arr1[j]
-	})
-	fmt.Println(arr1)
 }

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrays/findDuplicates.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/reverseArrayUsingPositions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/rotateArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrays/reverseSortedArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpServer/requestLogger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpServer/simpleRequest.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrays/copyArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays/copyArray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrays/reverseArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays/reverseArray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arrays/rotateArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/arrays/rotateArray.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +79,14 @@
     "Go Build.go build pointerIndirection.go.executor": "Run",
     "Go Build.go build pointerIndirection2.go.executor": "Run",
     "Go Build.go build reader.go.executor": "Run",
+    "Go Build.go build requestLogger.go.executor": "Run",
     "Go Build.go build reverseArray.go.executor": "Run",
     "Go Build.go build reverseArrayUsingPositions.go.executor": "Run",
     "Go Build.go build reverseSingleString.go.executor": "Run",
     "Go Build.go build reverseStrings.go.executor": "Run",
     "Go Build.go build rotateArray.go.executor": "Run",
     "Go Build.go build sameElementsinArray.go.executor": "Run",
+    "Go Build.go build simpleRequest.go.executor": "Run",
     "Go Build.go build slicetomap.go.executor": "Run",
     "Go Build.go build sortSlice.go.executor": "Run",
     "Go Build.go build stringers.go.executor": "Run",
@@ -127,7 +132,7 @@
       <recent name="$PROJECT_DIR$/realtimeExamples" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build reverseArrayUsingPositions.go">
+  <component name="RunManager" selected="Go Build.go build test.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -135,14 +140,6 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build findDuplicates.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/arrays/findDuplicates.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -153,28 +150,20 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build maximumSubarray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build requestLogger.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/arrays/maximumSubarray.go" />
+      <filePath value="$PROJECT_DIR$/httpServer/requestLogger.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build moveZeroestoEnd.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build reverseArray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/arrays/moveZeroestoEnd.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build reverseArrayUsingPositions.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/arrays/reverseArrayUsingPositions.go" />
+      <filePath value="$PROJECT_DIR$/arrays/reverseArray.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build rotateArray.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -185,13 +174,29 @@
       <filePath value="$PROJECT_DIR$/arrays/rotateArray.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build simpleRequest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/httpServer/simpleRequest.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/arrays/test.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build reverseArrayUsingPositions.go" />
+        <item itemvalue="Go Build.go build test.go" />
         <item itemvalue="Go Build.go build rotateArray.go" />
-        <item itemvalue="Go Build.go build findDuplicates.go" />
-        <item itemvalue="Go Build.go build moveZeroestoEnd.go" />
-        <item itemvalue="Go Build.go build maximumSubarray.go" />
+        <item itemvalue="Go Build.go build reverseArray.go" />
+        <item itemvalue="Go Build.go build requestLogger.go" />
+        <item itemvalue="Go Build.go build simpleRequest.go" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +236,7 @@
       <workItem from="1720873849564" duration="7307000" />
       <workItem from="1721190553349" duration="221000" />
       <workItem from="1721278117845" duration="8430000" />
-      <workItem from="1721673828935" duration="25309000" />
+      <workItem from="1721673828935" duration="51316000" />
     </task>
     <servers />
   </component>
