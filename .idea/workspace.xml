@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BFSandDFS/shortestPath.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrays/triplets.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stackandqueues/balancedBrackets.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stackandqueues/minmaxstack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stackandqueues/queueImplementation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BST/BST.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursions/factorial.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursions/fibonacci.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursions/permutations.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursions/reversestringrecursion.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/stackandqueues/test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -51,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build BST.go.executor": "Run",
     "Go Build.go build arrayOperations.go.executor": "Run",
     "Go Build.go build balancedBrackets.go.executor": "Run",
     "Go Build.go build channels.go.executor": "Run",
@@ -59,6 +60,8 @@
     "Go Build.go build emptyInterface.go.executor": "Run",
     "Go Build.go build error.go.executor": "Run",
     "Go Build.go build errorExample.go.executor": "Run",
+    "Go Build.go build factorial.go.executor": "Run",
+    "Go Build.go build fibonacci.go.executor": "Run",
     "Go Build.go build fileReader.go.executor": "Run",
     "Go Build.go build filelineReader.go.executor": "Run",
     "Go Build.go build filterIpfromlogs.go.executor": "Run",
@@ -79,6 +82,7 @@
     "Go Build.go build nilInterface.go.executor": "Run",
     "Go Build.go build palindromeString.go.executor": "Run",
     "Go Build.go build parallelprocessing.go.executor": "Run",
+    "Go Build.go build permutations.go.executor": "Run",
     "Go Build.go build pointerIndirection.go.executor": "Run",
     "Go Build.go build pointerIndirection2.go.executor": "Run",
     "Go Build.go build queueImplementation.go.executor": "Run",
@@ -89,6 +93,7 @@
     "Go Build.go build reverseArrayUsingPositions.go.executor": "Run",
     "Go Build.go build reverseSingleString.go.executor": "Run",
     "Go Build.go build reverseStrings.go.executor": "Run",
+    "Go Build.go build reversestringrecursion.go.executor": "Run",
     "Go Build.go build rotateArray.go.executor": "Run",
     "Go Build.go build sameElementsinArray.go.executor": "Run",
     "Go Build.go build shortestPath.go.executor": "Run",
@@ -118,7 +123,7 @@
     "code.cleanup.on.save": "true",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/saryakumar/stash/goPlayground",
+    "last_opened_file_path": "/Users/saryakumar/stash/goPlayground/stackandqueues",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,10 +136,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stackandqueues" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/BST" />
       <recent name="$PROJECT_DIR$/httpServer" />
       <recent name="$PROJECT_DIR$/goBasics" />
-      <recent name="$PROJECT_DIR$/realtimeExamples" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/arrays" />
@@ -142,7 +148,7 @@
       <recent name="$PROJECT_DIR$/realtimeExamples" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build queueImplementation.go">
+  <component name="RunManager" selected="Go Build.go build filterIpfromlogs.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -152,12 +158,20 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build balancedBrackets.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build BST.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/stackandqueues/balancedBrackets.go" />
+      <filePath value="$PROJECT_DIR$/BST/BST.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build filterIpfromlogs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/realtimeExamples/filterIpfromlogs.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -168,31 +182,7 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build minmaxstack.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/stackandqueues/minmaxstack.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build queueImplementation.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/stackandqueues/queueImplementation.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build shortestPath.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/BFSandDFS/shortestPath.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build test.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
@@ -200,12 +190,28 @@
       <filePath value="$PROJECT_DIR$/stackandqueues/test.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build test.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/realtimeExamples/test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/recursions/test.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build queueImplementation.go" />
-        <item itemvalue="Go Build.go build shortestPath.go" />
-        <item itemvalue="Go Build.go build balancedBrackets.go" />
-        <item itemvalue="Go Build.go build minmaxstack.go" />
+        <item itemvalue="Go Build.go build filterIpfromlogs.go" />
+        <item itemvalue="Go Build.go build test.go (2)" />
+        <item itemvalue="Go Build.go build BST.go" />
+        <item itemvalue="Go Build.go build test.go (1)" />
         <item itemvalue="Go Build.go build test.go" />
       </list>
     </recent_temporary>
@@ -247,7 +253,7 @@
       <workItem from="1721190553349" duration="221000" />
       <workItem from="1721278117845" duration="8430000" />
       <workItem from="1721673828935" duration="75474000" />
-      <workItem from="1722971040831" duration="5735000" />
+      <workItem from="1722971040831" duration="17410000" />
     </task>
     <servers />
   </component>
