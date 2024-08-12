@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5d8331-1cfa-4e91-a694-d24cfa560879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/recursions/findmaxweightpermutation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursions/powerset.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFSandDFS/BFS.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFSandDFS/DFS.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFSandDFS/courseScheduleCyclic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFSandDFS/cyclicGraph.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BST/temp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sorting/bubble.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sorting/selection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sorting/test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursions/permutations.go" beforeDir="false" afterPath="$PROJECT_DIR$/recursions/permutations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackandqueues/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/stackandqueues/test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +53,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build BFS.go.executor": "Run",
     "Go Build.go build BST.go.executor": "Run",
+    "Go Build.go build DFS.go.executor": "Run",
     "Go Build.go build arrayOperations.go.executor": "Run",
     "Go Build.go build balancedBrackets.go.executor": "Run",
+    "Go Build.go build bubble.go.executor": "Run",
     "Go Build.go build channels.go.executor": "Run",
     "Go Build.go build channels2.go.executor": "Run",
     "Go Build.go build copyArray.go.executor": "Run",
+    "Go Build.go build cyclicGraph.go.executor": "Run",
     "Go Build.go build emptyInterface.go.executor": "Run",
     "Go Build.go build error.go.executor": "Run",
     "Go Build.go build errorExample.go.executor": "Run",
@@ -92,10 +100,12 @@
     "Go Build.go build reverseArray.go.executor": "Run",
     "Go Build.go build reverseArrayUsingPositions.go.executor": "Run",
     "Go Build.go build reverseSingleString.go.executor": "Run",
+    "Go Build.go build reverseSortedArray.go.executor": "Run",
     "Go Build.go build reverseStrings.go.executor": "Run",
     "Go Build.go build reversestringrecursion.go.executor": "Run",
     "Go Build.go build rotateArray.go.executor": "Run",
     "Go Build.go build sameElementsinArray.go.executor": "Run",
+    "Go Build.go build selection.go.executor": "Run",
     "Go Build.go build shortestPath.go.executor": "Run",
     "Go Build.go build simpleRequest.go.executor": "Run",
     "Go Build.go build singlelinkedlist.go.executor": "Run",
@@ -104,6 +114,7 @@
     "Go Build.go build stack.go.executor": "Run",
     "Go Build.go build stringers.go.executor": "Run",
     "Go Build.go build syncGroup.go.executor": "Run",
+    "Go Build.go build temp.go.executor": "Run",
     "Go Build.go build test.go (1).executor": "Run",
     "Go Build.go build test.go (2).executor": "Run",
     "Go Build.go build test.go.executor": "Run",
@@ -149,7 +160,7 @@
       <recent name="$PROJECT_DIR$/realtimeExamples" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build test.go">
+  <component name="RunManager" selected="Go Build.go build BFS.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
@@ -159,12 +170,36 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build findmaxweightpermutation.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build BFS.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/recursions/findmaxweightpermutation.go" />
+      <filePath value="$PROJECT_DIR$/BFSandDFS/BFS.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build BST.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/BST/BST.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build DFS.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/BFSandDFS/DFS.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build cyclicGraph.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goPlayground" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/BFSandDFS/cyclicGraph.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -175,45 +210,21 @@
       <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/time.go|$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build permutations.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/recursions/permutations.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build powerset.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/recursions/powerset.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goPlayground" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/recursions/test.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build testperm.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goPlayground" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/recursions/testperm.go" />
+      <filePath value="$PROJECT_DIR$/BFSandDFS/test.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build BFS.go" />
         <item itemvalue="Go Build.go build test.go" />
-        <item itemvalue="Go Build.go build powerset.go" />
-        <item itemvalue="Go Build.go build findmaxweightpermutation.go" />
-        <item itemvalue="Go Build.go build testperm.go" />
-        <item itemvalue="Go Build.go build permutations.go" />
+        <item itemvalue="Go Build.go build cyclicGraph.go" />
+        <item itemvalue="Go Build.go build DFS.go" />
+        <item itemvalue="Go Build.go build BST.go" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +265,7 @@
       <workItem from="1721190553349" duration="221000" />
       <workItem from="1721278117845" duration="8430000" />
       <workItem from="1721673828935" duration="75474000" />
-      <workItem from="1722971040831" duration="31868000" />
+      <workItem from="1722971040831" duration="55803000" />
     </task>
     <servers />
   </component>
