@@ -16,6 +16,7 @@ func permutation(arr []int) [][]int {
 			return
 		}
 
+		// backtracking
 		for i := start; i < len(arr); i++ {
 			//fmt.Printf("i is %d, start is %d, arr is %d\n", i, start, arr)
 			arr[start], arr[i] = arr[i], arr[start]
